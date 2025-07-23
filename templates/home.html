@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .button-container {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+        .signin {
+            background-color: #007BFF;
+        }
+        .signin:hover {
+            background-color: #0056b3;
+        }
+        .signup {
+            background-color: #28a745;
+        }
+        .signup:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p>Please choose an option:</p>
+    <div class="button-container">
+<!--        <a href="{{url_for('login')}}" class="button signin">Sign-In</a>-->
+        <a href="/login" class="button signin">Sign-In</a>
+        <a href="{{url_for('register')}}" class="button signup">Sign-Up</a>
+    </div>
+</body>
+</html>
+

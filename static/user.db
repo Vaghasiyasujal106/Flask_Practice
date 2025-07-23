@@ -1,0 +1,12 @@
+CREATE DATABASE mydb;
+USE mydb;
+CREATE TABLE user(
+	fname VARCHAR(100),
+    lname VARCHAR(100)
+);
+INSERT INTO user
+(fname,lname)
+VALUES
+('sujal','vaghasiya');
+
+SELECT*FROM user;

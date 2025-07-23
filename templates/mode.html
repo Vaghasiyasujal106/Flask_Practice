@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Example</title>
+    <style>
+        /* Light mode styles */
+        body.light {
+            background-color: white;
+            color: black;
+        }
+
+        /* Dark mode styles */
+        body.dark {
+            background-color: black;
+            color: white;
+        }
+
+        .toggle-btn {
+            padding: 10px 20px;
+            margin: 20px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="{{ theme }}">
+    <h1>Welcome to Dark Mode Example!</h1>
+    <p>You are currently in <strong>{{ theme }}</strong> mode.</p>
+    <a href="/toggle-theme" class="toggle-btn">Toggle Theme</a>
+</body>
+</html>
+
